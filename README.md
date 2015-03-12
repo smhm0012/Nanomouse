@@ -1,5 +1,5 @@
 # Nanomouse - CENG604, Humber College
- Group Members: Jason Nixon, Guillermo Febian, & Mohammad Sameeh
+ Group Members: Jason Nixon, Guillermo Fabian, & Mohammad Sameeh
 
  
  ALGORITHM -- By: Mohammad Sameeh
@@ -12,3 +12,8 @@
 
 	Edited By: Jason Nixon
  -------------------------------------------------
+
+ DATABASE -- By: Guillermo Fabian
+
+	Edit by: Guillermo Fabian
+	Website: http://munro.humber.ca/~fbng0008/ceng512/
