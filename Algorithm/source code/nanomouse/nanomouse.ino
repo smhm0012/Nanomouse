@@ -107,7 +107,7 @@ void forwardWhiskers()
   motors.stop();
 
   maze.mouseRow += neighboringCells[maze.mouseHeading][0];
-  maze.mouseColumn += neighboringCells[maze.mouseHeading][0]; //NEWLY ADDED, NOT TESTED
+  maze.mouseColumn += neighboringCells[maze.mouseHeading][0]; //NEWLY ADDED, NOT TESTED!
 
 }
 
