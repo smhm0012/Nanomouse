@@ -7,10 +7,11 @@
 
  -------------------------------------------------
  ALGORITHM -- By: Mohammad Sameeh
+ [CENG512 - Nanomouse](http://munro.humber.ca/~smhm0012/ceng512)
  
 	Latest Edit: April 13, 2015
 	Website: 
-		[http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512)
+		[CENG512 - Nanomouse](http://munro.humber.ca/~smhm0012/ceng512)
  -------------------------------------------------
  
  ANDROID APPLICATION -- By: Jason Nixon
