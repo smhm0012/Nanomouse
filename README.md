@@ -10,7 +10,7 @@
  
 	Latest Edit: April 13, 2015
 	Website: 
-		<a style="font-family:arial;font-size:90%;" href="http://munro.humber.ca/~smhm0012/ceng512">http://munro.humber.ca/~smhm0012/ceng512</a>
+		[http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512)
  -------------------------------------------------
  
  ANDROID APPLICATION -- By: Jason Nixon
