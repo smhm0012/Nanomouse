@@ -1,1 +1,1 @@
-Please visit [http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512) to follow the full build instructions.
+Please visit http://munro.humber.ca/~smhm0012/ceng512 to follow the full build instructions.
