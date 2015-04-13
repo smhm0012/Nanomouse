@@ -1,7 +1,7 @@
 # Nanomouse - CENG604, Humber College
 	Group Members: Jason Nixon, Guillermo Fabian, & Mohammad Sameeh
 
- ![Nanomouse](\Build Instructions\Nanomouse_1_2.png)
+ ![Nanomouse](Build Instructions/Nanomouse_1_2.png)
 	
  The purpose of our Nanomouse is to use the Flood Fill algorithm to solve a maze. 
  We have added Blue-tooth functionality to manually control the Nanomouse with an Android App.
@@ -10,9 +10,9 @@
  -------------------------------------------------
  ALGORITHM -- By: Mohammad Sameeh
  
- Latest Edit: April 13, 2015
- -
- Website: [http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512)
+ Latest Edit - April 13, 2015
+ 
+ Website - [http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512)
 
  -------------------------------------------------
  
