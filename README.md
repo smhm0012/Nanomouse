@@ -7,19 +7,19 @@
 
  -------------------------------------------------
  ALGORITHM -- By: Mohammad Sameeh
- [CENG512 - Nanomouse](http://munro.humber.ca/~smhm0012/ceng512)
  
-	Latest Edit: April 13, 2015
-	Website: 
-		[CENG512 - Nanomouse](http://munro.humber.ca/~smhm0012/ceng512)
+ ```HTML
+ Latest Edit: April 13, 2015
+ Website: [http://munro.humber.ca/~smhm0012/ceng512](http://munro.humber.ca/~smhm0012/ceng512)
+ <a style="font-family:arial;font-size:90%;" href="http://munro.humber.ca/~smhm0012/ceng512">[http://munro.humber.ca/~smhm0012/ceng512</a>
+ ```
  -------------------------------------------------
  
  ANDROID APPLICATION -- By: Jason Nixon
 
-	Website: N/A
+ Website: N/A
  -------------------------------------------------
 
  DATABASE -- By: Guillermo Fabian
 
-	Website: 
-		http://munro.humber.ca/~fbng0008/ceng512/
+ Website: [http://munro.humber.ca/~fbng0008/ceng512/](http://munro.humber.ca/~fbng0008/ceng512/)
