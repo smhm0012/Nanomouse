@@ -1,4 +1,5 @@
 //#define DEBUG //Comment in to enable debugging codes.
+#define RUN //Comment out when debugging
 
 #include <Servo.h>
 #include "NanomouseMotors.h"
@@ -49,7 +50,9 @@ void setup()
 
   delay(500); //Time to take finger off the start button
 
+  #ifdef RUN
   calibrate();
+  #endif
 
   do //Do while not at end of maze
   {
@@ -65,8 +68,10 @@ void setup()
     #endif
     //End debugging
     
+    #ifdef RUN
     turnTowardBestNeighbor();
     forwardWhiskers();
+    #endif
   }
   while(maze.values[maze.mouseRow][maze.mouseColumn] != 0);
   
