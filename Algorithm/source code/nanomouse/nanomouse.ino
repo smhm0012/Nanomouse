@@ -1,4 +1,4 @@
-//#define DEBUG //Comment in to enable debugging codes.
+#define DEBUG //Comment in to enable debugging codes.
 #define RUN //Comment out when debugging
 
 #include <Servo.h>
@@ -20,7 +20,7 @@ NanomouseMotors motors;
 //LeftEmitter, LeftDetector, frontEmitter...
 ////NanomouseSensors<4, A7, 3, A6, 2, A5> sensors;
 
-NanoMouseMaze<5,5> maze; //Total Rows and Columns. 5 = 0-4
+NanoMouseMaze<3,4> maze; //Total Rows and Columns. 5 = 0-4
 
 void setup()
 {
@@ -34,12 +34,12 @@ void setup()
   sensors.configure(); //Trun on infrared emitters
 
   //Start mouse in certain cell, facing certain position
-  maze.mouseRow = 4;
+  maze.mouseRow = 2;
   maze.mouseColumn = 0;
   maze.mouseHeading = NORTH;
   //The finishing point
-  maze.targetRow = 3;
-  maze.targetColumn = 4;
+  maze.targetRow = 1;
+  maze.targetColumn = 2;
 
   Serial.begin(9600);
 
@@ -155,7 +155,7 @@ void scanWalls()
   }
   if(sensors.left > thresholdSide)
   {
-    maze.addWalls((maze.mouseHeading + 3) % 4);
+    maze.addWalls((maze.mouseHeading + 3) % 5);
   }
 }
 
