@@ -112,7 +112,7 @@ void forwardWhiskers()
   motors.stop();
 
   maze.mouseRow += neighboringCells[maze.mouseHeading][0];
-  maze.mouseColumn += neighboringCells[0][maze.mouseHeading]; //NEWLY ADDED, NOT TESTED!
+  maze.mouseColumn += neighboringCells[maze.mouseHeading][1]; //NEWLY ADDED, NOT TESTED!
 
 }
 
@@ -155,7 +155,7 @@ void scanWalls()
   }
   if(sensors.left > thresholdSide)
   {
-    maze.addWalls((maze.mouseHeading + 3) % 5);
+    maze.addWalls((maze.mouseHeading + 3) % 4);
   }
 }
 
