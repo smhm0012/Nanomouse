@@ -1,3 +1,14 @@
+/**
+     Computer Systems Project
+     @project: Nanomouse
+     @file: nanomouse.ino
+     @author Mohammad Sameeh
+     @course: CENG604
+     @date: February 13, 2015
+     @rev: April 30, 2015
+     @description: The main Algorithm code which controls the Nanomouse.
+*/
+
 #define DEBUG //Comment in to enable debugging codes.
 #define RUN //Comment out when debugging
 

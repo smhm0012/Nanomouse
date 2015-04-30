@@ -1,3 +1,14 @@
+/**
+     Computer Systems Project
+     @project: Nanomouse
+     @file: NanomouseSensors.h
+     @author Mohammad Sameeh
+     @course: CENG604
+     @date: February 13, 2015
+     @rev: April 30, 2015
+     @description: The header file for the code which controls and initializes the Nanomouse's sensors.
+*/
+
 #include <Arduino.h>
 
 template <byte leftEmitter, byte leftDetector, byte frontEmitter, byte frontDetector, byte rightEmitter, byte rightDetector>

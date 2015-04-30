@@ -1,3 +1,15 @@
+/**
+     Computer Systems Project
+     @project: Nanomouse
+     @file: NanoMouseMaze.h
+     @author Michael Backus
+	 @modified_by: Mohammad Sameeh
+     @course: CENG604
+     @date: February 13, 2015
+     @rev: April 30, 2015
+     @description: The header file for the code which solves the maze.
+*/
+
 #include <Arduino.h>
 
 #define NORTH 0
