@@ -34,6 +34,7 @@
         <activity
             android:name=".ListActivity"
             android:label="@string/title_activity_list" >
+            android:screenOrientation="landscape" >
         </activity>
     </application>
 

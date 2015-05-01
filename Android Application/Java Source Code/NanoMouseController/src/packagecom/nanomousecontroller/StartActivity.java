@@ -8,6 +8,18 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+/**
+ * @mainpage Nano-Mouse Application
+ * @details This is another version of the Nano-Mouse Controller App
+ * \nwhich uses java code in Eclipse Juno
+ */
+
+/**
+ * @author Jason Nixon
+ * @file StartActivity.java 
+ * @details Basic start screen to get into the Main part of the 
+ * \n application
+ */
 
 public class StartActivity extends Activity {
 
@@ -18,6 +30,8 @@ public class StartActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_start);
 		btn1 = (Button)findViewById(R.id.button1);
+		
+		// When the Button on the Start Screen is pressed it will go to the Main Screen
 	    btn1.setOnClickListener(new OnClickListener(){
 	      public void onClick(View v) {
 	    	  go = new Intent(getApplicationContext(),MainActivity.class);

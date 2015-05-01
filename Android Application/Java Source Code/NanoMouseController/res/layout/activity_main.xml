@@ -10,7 +10,7 @@
     tools:context="packagecom.nanomousecontroller.MainActivity" >
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
@@ -18,38 +18,39 @@
         android:text="Connect" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/rightArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/button1"
+        android:layout_alignTop="@+id/leftArrow"
+        android:layout_marginLeft="42dp"
+        android:layout_toRightOf="@+id/upArrow"
+        android:src="@drawable/rightimages" />
+
+    <ImageButton
+        android:id="@+id/leftArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/downArrow"
+        android:layout_marginBottom="38dp"
+        android:layout_marginRight="43dp"
+        android:layout_toLeftOf="@+id/upArrow"
+        android:src="@drawable/leftimages" />
+
+    <ImageButton
+        android:id="@+id/upArrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
         android:layout_centerHorizontal="true"
         android:src="@drawable/upimages" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/downArrow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/imageButton2"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/upArrow"
+        android:layout_below="@+id/upArrow"
         android:src="@drawable/downimages" />
-
-    <ImageButton
-        android:id="@+id/imageButton3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/imageButton1"
-        android:layout_marginLeft="42dp"
-        android:layout_toRightOf="@+id/imageButton2"
-        android:src="@drawable/rightimages" />
-
-    <ImageButton
-        android:id="@+id/imageButton1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageButton4"
-        android:layout_marginBottom="38dp"
-        android:layout_marginRight="43dp"
-        android:layout_toLeftOf="@+id/imageButton2"
-        android:src="@drawable/leftimages" />
 
 </RelativeLayout>

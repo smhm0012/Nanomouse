@@ -30,17 +30,20 @@ public final class R {
         public static final int upimages=0x7f020005;
     }
     public static final class id {
-        public static final int action_settings=0x7f080005;
-        public static final int button1=0x7f080000;
-        public static final int imageButton1=0x7f080003;
-        public static final int imageButton2=0x7f080001;
-        public static final int imageButton3=0x7f080004;
-        public static final int imageButton4=0x7f080002;
+        public static final int DeviceList=0x7f080000;
+        public static final int action_settings=0x7f080007;
+        public static final int button1=0x7f080006;
+        public static final int button2=0x7f080001;
+        public static final int downArrow=0x7f080005;
+        public static final int leftArrow=0x7f080003;
+        public static final int rightArrow=0x7f080002;
+        public static final int upArrow=0x7f080004;
     }
     public static final class layout {
         public static final int activity_list=0x7f030000;
         public static final int activity_main=0x7f030001;
         public static final int activity_start=0x7f030002;
+        public static final int list_item=0x7f030003;
     }
     public static final class menu {
         public static final int list=0x7f070000;

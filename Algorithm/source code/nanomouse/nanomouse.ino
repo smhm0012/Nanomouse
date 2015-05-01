@@ -33,6 +33,9 @@ NanomouseMotors motors;
 
 NanoMouseMaze<3,4> maze; //Total Rows and Columns. 5 = 0-4
 
+/*
+	setup(): Runs (once) when you start the Arduino
+*/
 void setup()
 {
   // put your setup code here, to run once:
@@ -93,6 +96,10 @@ void setup()
   #endif
 }
 
+/*
+	loop(): Continuously runs after the setup() function as finished.
+	* Currently not being used (no need).
+*/
 void loop()
 {
   // put your main code here, to run repeatedly:
@@ -100,6 +107,11 @@ void loop()
   ///avoid(state());
 }
 
+/*
+	forwardWhiskers(): Moves the Nanomouse forward by one maze cell,
+	if no wall detected. Then, it updates the current row and
+	column values according to the new cell.
+*/
 void forwardWhiskers()
 {
   unsigned long startingTime = millis();
@@ -127,6 +139,10 @@ void forwardWhiskers()
 
 }
 
+/*
+	calibrate(): Initializes the Nanomouse's sensors and sets
+	their thresholds for detecting walls (for front and side sensors).
+*/
 void calibrate()
 {
   sensors.initialize();
@@ -154,6 +170,12 @@ void calibrate()
   thresholdFront = (targetFront + sensors.front)/2;
 }
 
+/*
+	scanWalls(): Using its sensor's threshold, checks if there is a 
+	wall in the front or sides (right and left) of the Nanomouse 
+	(according to its current position) and adds a wall there 
+	(for avoiding and mapping purposes).
+*/
 void scanWalls()
 {
   if(sensors.front > thresholdFront)
@@ -170,6 +192,10 @@ void scanWalls()
   }
 }
 
+/*
+	turnTowardBestNeighbor(): According to the values assigned by the Algorithm,
+	picks the best cell to go towards (which would be the one with the smallest value).
+*/
 void turnTowardBestNeighbor()
 {
   byte desiredHeading = maze.findBestNeighbor();
@@ -191,6 +217,11 @@ void turnTowardBestNeighbor()
   maze.mouseHeading = desiredHeading;
 }
 
+/*
+	state(): Value returned if wall detected.
+	The value is used by the avoid() function to prevent
+	collisions.
+*/
 byte state()
 {
   //int threshold = 50; //Test first
@@ -214,6 +245,10 @@ byte state()
   return event;
 }
 
+/*
+	avoid(): Avoid any walls detected (prevent wall collisions)
+	* Was used in the demo for CENG512. Currently not being used.
+*/
 void avoid(byte event)
 {
   switch(event)
@@ -251,6 +286,10 @@ void avoid(byte event)
   }
 }
 
+/*
+	navigateLabyrinth(): A test function used to navigate a known labyrinth.
+	*Currently not being used.
+*/
 void navigateLabyrinth(byte event)
 {
   switch(event)
