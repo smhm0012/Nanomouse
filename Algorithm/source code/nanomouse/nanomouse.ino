@@ -1,3 +1,14 @@
+/**
+     Computer Systems Project
+     @project: Nanomouse
+     @file: nanomouse.ino
+     @author Mohammad Sameeh
+     @course: CENG604
+     @date: February 13, 2015
+     @rev: April 30, 2015
+     @description: The main Algorithm code which controls the Nanomouse.
+*/
+
 #define DEBUG //Comment in to enable debugging codes.
 #define RUN //Comment out when debugging
 
@@ -92,7 +103,7 @@ void loop()
 void forwardWhiskers()
 {
   unsigned long startingTime = millis();
-  int oneCell = 1750; //Milliseconds required to travel from one cell's center to another's center (adjust accordingly).
+  int oneCell = 1900; //Milliseconds required to travel from one cell's center to another's center (adjust accordingly).
 
   while(sensors.front < targetFront && millis() - startingTime < oneCell)
   {
@@ -112,7 +123,7 @@ void forwardWhiskers()
   motors.stop();
 
   maze.mouseRow += neighboringCells[maze.mouseHeading][0];
-  maze.mouseColumn += neighboringCells[0][maze.mouseHeading]; //NEWLY ADDED, NOT TESTED!
+  maze.mouseColumn += neighboringCells[maze.mouseHeading][1]; //NEWLY ADDED, NOT TESTED!
 
 }
 
@@ -124,8 +135,8 @@ void calibrate()
   motors.turn(RIGHT,90);
   sensors.initialize();
   targetFront = sensors.front;
-  thresholdSide = (targetSide + sensors.left)/2; //Original
-  //thresholdSide = (targetSide + 2*sensors.left)/3;
+  //thresholdSide = (targetSide + sensors.left)/2; //Original
+  thresholdSide = (targetSide + 3*sensors.left)/6;
   /*
     If your robot does not appear to detect walls consistently,
    you could replace the average between the target and
@@ -155,7 +166,7 @@ void scanWalls()
   }
   if(sensors.left > thresholdSide)
   {
-    maze.addWalls((maze.mouseHeading + 3) % 5);
+    maze.addWalls((maze.mouseHeading + 3) % 4);
   }
 }
 
